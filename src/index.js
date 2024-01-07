@@ -5,6 +5,7 @@ const handlebars = require("express-handlebars").engine;
 const app = express();
 const port = 3000;
 
+
 app.use(express.static(path.join(__dirname, 'public'))); //kiểm tra bằng phương thức static 
 
 //HTTP logger
@@ -25,6 +26,9 @@ app.get("/", (req, res) => {
 
 app.get("/news", (req, res) => {
   res.render("news");//render ra 1 trang có tên là news(yêu cầu phải có file tên là news.hbs)
+});
+app.get("/search", (req, res) => {
+  res.render("search");
 });
 
 app.listen(port, () => {
