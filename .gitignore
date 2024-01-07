@@ -1,3 +1,4 @@
 .vscode
 src/public/css/
-/node_modulels
+/node_modulels 
+# là các file mà muốn git bỏ qua không up lên 
